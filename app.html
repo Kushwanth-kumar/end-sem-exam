@@ -1,0 +1,28 @@
+import React from "react";
+
+const UserCard = ({ name, age, bio }) => {
+  const cardStyle = {
+    backgroundColor: "blue",
+    color: "white",
+    padding: "20px",
+    borderRadius: "10px",
+    width: "250px",
+    textAlign: "center",
+    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+    margin: "20px auto",
+  };
+
+  const nameStyle = { fontSize: "20px", fontWeight: "bold" };
+  const ageStyle = { fontSize: "16px", margin: "10px 0" };
+  const bioStyle = { fontSize: "14px" };
+
+  return (
+    <div style={cardStyle}>
+      <div style={nameStyle}>{name}</div>
+      <div style={ageStyle}>Age: {age}</div>
+      <div style={bioStyle}>{bio}</div>
+    </div>
+  );
+};
+
+export default UserCard;
